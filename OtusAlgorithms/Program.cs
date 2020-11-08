@@ -6,12 +6,12 @@ namespace OtusAlgorithms
 {
     public class Program
     {
+        private const string DirPath = "../../../../";
+
         private static void Main(string[] args)
         {
-            var stringPath = "../../../../0.String";
-            var ticketsPath = "../../../../1.Tickets";
-            Check(stringPath, new Strings());
-            Check(ticketsPath, new Tickets());
+            Check($"{DirPath}0.String", new Strings());
+            Check($"{DirPath}1.Tickets", new Tickets());
             Console.ReadKey();
         }
 
